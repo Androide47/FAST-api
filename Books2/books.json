@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "Computer Science Pro",
+        "author": "Coding",
+        "description": "A very nice book!",
+        "rating": 5,
+        "year": 2020
+    },
+    {
+        "id": 2,
+        "title": "Python Basics",
+        "author": "John Doe",
+        "description": "Learn Python from scratch.",
+        "rating": 4,
+        "year": 2018
+    },
+    {
+        "id": 3,
+        "title": "Advanced Python",
+        "author": "Jane Smith",
+        "description": "Master advanced Python concepts.",
+        "rating": 5,
+        "year": 2019
+    },
+    {
+        "id": 4,
+        "title": "Data Structures and Algorithms",
+        "author": "Alice Johnson",
+        "description": "A comprehensive guide to DSA.",
+        "rating": 5,
+        "year": 2017
+    },
+    {
+        "id": 5,
+        "title": "Machine Learning 101",
+        "author": "Bob Brown",
+        "description": "An introduction to machine learning.",
+        "rating": 4,
+        "year": 2021
+    },
+    {
+        "id": 6,
+        "title": "Deep Learning with Python",
+        "author": "Carol White",
+        "description": "A deep dive into deep learning.",
+        "rating": 5,
+        "year": 2020
+    },
+    {
+        "id": 7,
+        "title": "FastAPI for Beginners",
+        "author": "David Green",
+        "description": "Learn FastAPI step by step.",
+        "rating": 4,
+        "year": 2022
+    },
+    {
+        "id": 8,
+        "title": "RESTful APIs with Python",
+        "author": "Eve Black",
+        "description": "Build RESTful APIs using Python.",
+        "rating": 5,
+        "year": 2021
+    },
+    {
+        "id": 9,
+        "title": "Database Design",
+        "author": "Frank Blue",
+        "description": "Learn how to design databases effectively.",
+        "rating": 4,
+        "year": 2016
+    },
+    {
+        "id": 10,
+        "title": "Cloud Computing Essentials",
+        "author": "Grace Red",
+        "description": "An introduction to cloud computing.",
+        "rating": 3,
+        "year": 2015
+    },
+    {
+        "id": 11,
+        "title": "Artificial Intelligence Basics",
+        "author": "Henry Black",
+        "description": "An introduction to AI concepts.",
+        "rating": 5,
+        "year": 2023
+    },
+    {
+        "id": 12,
+        "title": "Web Development with Django",
+        "author": "Ivy Green",
+        "description": "Learn web development using Django.",
+        "rating": 4,
+        "year": 2020
+    },
+    {
+        "id": 13,
+        "title": "JavaScript Essentials",
+        "author": "Jack White",
+        "description": "Master the basics of JavaScript.",
+        "rating": 4,
+        "year": 2019
+    },
+    {
+        "id": 14,
+        "title": "React for Beginners",
+        "author": "Karen Blue",
+        "description": "Learn React step by step.",
+        "rating": 5,
+        "year": 2021
+    },
+    {
+        "id": 15,
+        "title": "DevOps Fundamentals",
+        "author": "Liam Red",
+        "description": "An introduction to DevOps practices.",
+        "rating": 4,
+        "year": 2022
+    }
+]
