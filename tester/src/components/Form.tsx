@@ -2,7 +2,11 @@ import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
+import { toast } from 'react-toastify';
+import { ClipLoader } from 'react-spinners';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
+
 const schema = z
   .object({
     email: z.string().min(5, { message: "Email must be at least 5 characters long" }),
@@ -18,6 +22,7 @@ type CreateUserRequest = z.infer<typeof schema>;
 
 const Form = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const {
     register,
@@ -33,9 +38,15 @@ const Form = () => {
         .post(`http://localhost:8000/auth`, data)
         .then((response) => {
             console.log("User created successfully:", response.data);
+            toast.success('Data posted successfully!');
+
         })
         .catch((error) => {
             console.error("Error creating user:", error);
+            toast.error('Error posting data');
+        })
+        .finally(() => {
+            setLoading(false);
         });
     };
 
@@ -109,7 +120,8 @@ const Form = () => {
         />
         <label className="form-check-label">Show Password</label>
       </div>
-      <button className="btn btn-outline-primary" type="submit">Submit</button>
+      <button className="btn btn-outline-primary" type="submit" disabled={loading}>Submit</button>
+      {loading && <ClipLoader color="#007bff" size={35} />}
     </form>
   );
 };

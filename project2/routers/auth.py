@@ -49,3 +49,6 @@ async def create_user(db: db_dependency,
         return create_user_model
     raise HTTPException(status_code=400, detail="User creation failed.")
 
+@router.post("/token")
+async def login_for_access_token():
+    return 'token'
